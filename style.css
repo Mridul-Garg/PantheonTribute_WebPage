@@ -72,7 +72,8 @@ section{
     margin-bottom: 40px;
 }
 .champ-image img{
-    width: 450px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
 
 }
@@ -90,4 +91,9 @@ button{
 button:hover{
     background: transparent;
     border: 1px solid;
+}
+@media screen and (max-width:480px) {
+    .logo, .hero-text, .champ-image, .audi, .navlist{
+        width: 100%;
+    }
 }
