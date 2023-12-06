@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantheon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PANTHEON TRIBUTE</a>
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://universe.leagueoflegends.com/en_PH/story/champion/pantheon/" target="_blank">Lore</a></li>
+            <li><a href="https://www.linkedin.com/in/mridul-garg04" target="_blank">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icons"></div>
+    </header>
+    <section class="champ">
+        <div class="hero-text">
+            <h5>Targonian Warrior</h5>
+            <p>Brother to warriors resting beneath wheat... Son of battles, a thousand times lost... I know who I am, and I will show the gods, WHAT I CAN BECOME!</p>
+            <audio id="audi"><source src="panthaud.mp3" type="audio/mp3"></audio>
+            <button onclick="playAudio()" type="button">Play</button>
+            <button onclick="pauseAudio()" type="button">Pause</button> 
+        </div>
+        <div class="champ-image">
+            <img src="final.png" alt="Pantheon Game Character">
+        </div>
+    </section>
+    <script>
+        var x = document.getElementById("audi"); 
+        function playAudio() { 
+        x.play(); 
+    } 
+    function pauseAudio() { 
+    x.pause();
+    }
+    </script>
+</body>
+</html>

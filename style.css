@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: whitesmoke;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .40 ease;
+    cursor: pointer;
+}
+.navlist a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+#menu-icons{
+    color: whitesmoke;
+    font-size: 40px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.champ{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #000040 0%,#D4AF37 36.53%,#000040 63.52% );
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 35px;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+.hero-text p{
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.champ-image img{
+    width: 450px;
+    height: auto;
+
+}
+button{
+    background: #020292;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px gray;
+    padding: 10px;
+    min-height: 30px;
+    min-width: 50px;
+    transition: all .6s ease;
+}
+button:hover{
+    background: transparent;
+    border: 1px solid;
+}
